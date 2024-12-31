@@ -38,19 +38,19 @@
 # greet()
 
 
-# def login_checking(func):
+def login_checking(func):
 
-#     def wrapper(*args, **kwargs):
+    def wrapper(*args, **kwargs):
 
-#         print(args)
-#         print(kwargs)
+        print(args)
+        print(kwargs)
 
-#         func(*args, kwargs)
+        func(*args, kwargs)
 
-#     return wrapper
+    return wrapper
 
-# @login_checking
-# def login(*args, **kwargs):
-#     pass
+@login_checking
+def login(*args, **kwargs):
+    pass
 
-# login("jawad", "khan", roll="01003", depart="ai")
+login("jawad", "khan", roll="01003", depart="ai")
